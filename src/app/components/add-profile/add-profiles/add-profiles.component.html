@@ -1,0 +1,19 @@
+<div class="m-5 col-5">
+  <button class="btn-primary" routerLink="/">View Lists</button>
+  <form [formGroup]="propertyFrom" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="email" class="form-control"  formControlName="Name">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">description</label>
+      <textarea class="form-control" rows="5" formControlName="Description" id="comment" name="text"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Size</label>
+      <input type="email" class="form-control" formControlName="Size">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
